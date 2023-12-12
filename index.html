@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website easy Design Shope</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <section id="image">
+        <div class="logo">
+            <img src="/assets/images/free-logo.jpg" height="100" width="100">
+        </div>
+        <div class="text">
+            <h1>WELCOME NEW MODELS FASHION</h1>
+            <p>shoping all new model fashion</p>
+            <div class="btn">
+                <a href="#"><span></span>FIND OUT</a>
+                <a href="#"><span></span>READ MORE</a>
+            </div>
+        </diV>
+
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="menuBtn">
+            <img src="./assets/images/menu_809564.png" id="menu">
+        </div>
+
+        <!--Features-->
+        <section id="feature">
+            <div class="title-text">
+                <p>FEATURES</p>
+                <h1>WHY CHOOSE US</h1>
+            </div>
+        </section>
+
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+            menuBtn.onclick = function () {
+                if (sideNav.style.right == "-200px") {
+                    sideNav.style.right = "0";
+                    menu.src = "images/close.png";
+                }
+                else {
+                    sideNav.style.right = "-200px";
+                    menu.src = "./images/menu.png";
+                }
+            }
+
+        </script>
+        <div id="service-grid">
+            <div class="service-1">
+                <h3>New model for women</h3>
+                <p>we new fashion 2023</p>
+            </div>
+            <div class="service-2">
+                <h3> new model for men</h3>
+                <p>we new fashion 2023</p>
+            </div>
+            <div class="service-3">
+                <h3> whole sales </h3>
+                <p>we new fashion 2023</p>
+            </div>
+        </div>
+
+        </bod>
+
+</html>
